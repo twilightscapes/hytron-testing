@@ -18,6 +18,7 @@ import styled from 'styled-components'
 // import Intro1 from '../Intro1'
 // import Intro2 from '../Intro2'
 // import Intro3 from '../Intro3'
+import URL from "../../../src/img/Hytron.svg"
 import { Fade } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
 
@@ -119,7 +120,9 @@ const HomePageTemplate = ({
 
 
 <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
-  {/* <object title="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" >You need a new browser</object> */}
+
+  
+  <object title="Animation: Hytron Logo" className="" id="svg1" data={URL} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'3', width:'100vw', height:'auto', border:'0px solid purple'  }} alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" >You need a new browser</object>
 
 {/* <iframe title="AdFree YouTube" id="youtube" className="blog-video" width="100%" height="800" src="https://www.youtube.com/embed/JOMipAq7ZSk" frameBorder="0" playsInline /> */}
 
