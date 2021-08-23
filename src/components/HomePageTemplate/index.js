@@ -4,7 +4,9 @@ import Helmet from 'react-helmet'
 // import Offerings from '../Offerings'
 // import Testimonials from '../Testimonials'
 import PropTypes from 'prop-types'
+import { ImPlay } from "react-icons/im"
 import Image from '../Image'
+import ReactPlayer from 'react-player/lazy'
 // import { graphql } from 'gatsby'
 // import { HTMLContent } from '../Content'
 import Contact from '../Contact-inc'
@@ -23,7 +25,7 @@ const CustomBox = styled.div`
 *, *:before, *:after { box-sizing: border-box; }
 
 // .intro:before{
-// 	content: "Todd Leads A Dual-Life";
+// 	content: "";
 // position:absolute;
 // display: flex;
 // align-items: center;
@@ -114,13 +116,72 @@ const HomePageTemplate = ({
 
 
 <CustomBox>
+
+
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)' }}>
+  {/* <object title="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" >You need a new browser</object> */}
+
+{/* <iframe title="AdFree YouTube" id="youtube" className="blog-video" width="100%" height="800" src="https://www.youtube.com/embed/JOMipAq7ZSk" frameBorder="0" playsInline /> */}
+
+
+
+
+<ReactPlayer
+          className='react-player'
+          url="https://www.youtube.com/embed/JOMipAq7ZSk"
+          width="100%"
+          height="100%"
+
+          autoplay={true}
+          background={true}
+          loop
+          playing
+          playsinline
+          muted={true}
+          showPortrait
+        //   playIcon={
+        //     <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'2', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+              
+      
+      
+      
+        // <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+        //   <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+      
+        //   <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+          
+        //   </div>
+        //   </button>}
+      
+      
+      
+        //     light="../assets/transparent.png"
+          />
+
+
+<div style={{display:'block', width:'100vw', height:'100%', overflow:'hidden', position:'relative', top:'0', zIndex:'-1'}}>
+
+
+       
+<Image alt="test" filename="slider-5.jpg" />
+
+</div>
+
+
+</div>
+
+
+
+
+
+
 <div className="intro">
 {/* <Intro1 /> */}
 {/* <Intro2 /> */}
 {/* <Intro3 /> */}
 {/* <Intro2 /> */}
 
-<div className="" style={{position:'absolute', top:'60px', left:'0', width:'100vw', height:'100vh', overflow:'hidden', padding:'20px 0 0 0', border:'0px solid red', zIndex:'',}}>
+{/* <div className="" style={{position:'absolute', top:'60px', left:'0', width:'100vw', height:'100vh', overflow:'hidden', padding:'20px 0 0 0', border:'0px solid red', zIndex:'',}}>
   
   <ScrollAnimation animateIn="fadeIn" delay={1600} style={{position:'relative', top:'0', right:'0',}}>
   <h1
@@ -162,27 +223,29 @@ const HomePageTemplate = ({
         </h3>
         </ScrollAnimation>
 
-        </div>
+        </div> */}
 
-        
-<div  className="slidecom" style={{position:'relative', overflow:'', height:'', zIndex:'0'}}>
-        {/* <Slide easing="ease"> */}
 
         
 
+  {/*   <div  className="slidecom" style={{position:'relative', overflow:'', height:'', zIndex:'0'}}>
+  
 
-        <Fade {...properties}>
+        
+
+
+         <Fade {...properties}>
 
 
        
 
           <div className="each-slide">
     
-              {/* <div style={{position:'absolute', zIndex:'50', width:'', textAlign:'center', border:'0px solid green', marginLeft:'15%', top:'150px'}}>
+              <div style={{position:'absolute', zIndex:'50', width:'', textAlign:'center', border:'0px solid green', marginLeft:'15%', top:'150px'}}>
                 <h3 style={{color:'#fff', fontSize:'30px'}}>The Rolex Collection</h3>
                 <a href="" style={{color:'#fff'}}>View All Watches</a>
                 
-                </div> */}
+                </div>
 
 <a href="/capabilities/" style={{color:'#fff'}}><Image alt="test" filename="img_3136.jpg" /></a>
             </div>
@@ -201,14 +264,14 @@ const HomePageTemplate = ({
 
     
 
-          {/* <div className="each-slide">
+          <div className="each-slide">
             <div>
               <span>Slide 3</span>
               <Image alt="test" filename="slide-3.jpg" />
             </div>
-          </div> */}
+          </div>
         </Fade>
-      </div>
+      </div> */}
 
 
 
