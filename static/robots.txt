@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: */admin/
+Disallow: */tags/
+Disallow: */blog/
+Disallow: */pricing/
+Disallow: */contact/
+Disallow: */aboutus/
+
+sitemap: https://hytronmanufacturing.com/sitemap.xml
